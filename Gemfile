@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'
-
+gem 'simple_form'
 gem 'bootstrap-sass'
 gem 'devise', '~> 3.3.0.rc2'
 # Use SCSS for stylesheets

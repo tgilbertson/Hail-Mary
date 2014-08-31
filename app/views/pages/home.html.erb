@@ -2,11 +2,216 @@
      <h1>No DBB's allowed.</h1>
      
      <% if user_signed_in? %>
-     # do something
+	     	<div class="btn-group" data-toggle="buttons">
+			  <label class="btn btn-primary active">
+			    <input type="radio" name="options" id="option1" checked> Option 1 (preselected)
+			  </label>
+
+			  		<div class="btn-group" data-toggle="buttons">
+					  <label class="btn btn-primary active">
+					    <input type="radio" name="options" id="option1" checked> Option 1 (preselected)
+					  </label>
+					  <label class="btn btn-primary">
+					    <input type="radio" name="options" id="option2"> Option 2
+					  </label>
+					  <label class="btn btn-primary">
+					    <input type="radio" name="options" id="option3"> Option 3
+					  </label>
+					</div>
+
+			  <label class="btn btn-primary">
+			    <input type="radio" name="options" id="option2"> Option 2
+			  </label>
+			  <label class="btn btn-primary">
+			    <input type="radio" name="options" id="option3"> Option 3
+			  </label>
+			</div>
      <% else %>
      <p>
        <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
        <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
   </p>    
+
+  		<div id="ride_extension_details">
+                <fieldset class="radio-button-group">
+                    <h3>
+
+                        Bike Type
+
+                    </h3>
+                    <input id="ride_biketype_road" type="radio" value="Road" name="ride[biketype]"></input>
+                    <label id="ride_road" for="ride_biketype_road">
+                        <div class="frame road small"></div>
+                        <p class="text-center">
+
+                            Road
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_mountain" type="radio" value="Mountain" name="ride[biketype]"></input>
+                    <label id="ride_mountain" for="ride_biketype_mountain">
+                        <div class="frame mountain small"></div>
+                        <p class="text-center">
+
+                            Mountain
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_cruiser" type="radio" value="Cruiser" name="ride[biketype]"></input>
+                    <label id="ride_cruiser" for="ride_biketype_cruiser">
+                        <div class="cruiser frame small"></div>
+                        <p class="text-center">
+
+                            Cruiser
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_folding" type="radio" value="Folding" name="ride[biketype]"></input>
+                    <label id="ride_folding" for="ride_biketype_folding">
+                        <div class="folding frame small"></div>
+                        <p class="text-center">
+
+                            Folding
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_fixed_gear" type="radio" value="Fixed Gear" name="ride[biketype]"></input>
+                    <label id="ride_fixed_gear" for="ride_biketype_fixed_gear">
+                        <div class="fixed_gear frame small"></div>
+                        <p class="text-center">
+
+                            Fixed Gear
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_single_speed" type="radio" value="Single Speed" name="ride[biketype]"></input>
+                    <label id="ride_single_speed" for="ride_biketype_single_speed">
+                        <div class="frame single_speed small"></div>
+                        <p class="text-center">
+
+                            Single Speed
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_professional_road" type="radio" value="Professional Road" name="ride[biketype]"></input>
+                    <label id="ride_professional_road" for="ride_biketype_professional_road">
+                        <div class="frame professional_road small"></div>
+                        <p class="text-center">
+
+                            Prof. Road
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_professional_mountain" type="radio" value="Professional Mountain" name="ride[biketype]"></input>
+                    <label id="ride_professional_mountain" for="ride_biketype_professional_mountain">
+                        <div class="frame professional_mountain small"></div>
+                        <p class="text-center">
+
+                            Prof. Mountain
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_children_s" type="radio" value="Children's" name="ride[biketype]"></input>
+                    <label id="ride_children_s" for="ride_biketype_children_s">
+                        <div class="children_s frame small"></div>
+                        <p class="text-center">
+
+                            Children's
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_cargo" type="radio" value="Cargo" name="ride[biketype]"></input>
+                    <label id="ride_cargo" for="ride_biketype_cargo">
+                        <div class="cargo frame small"></div>
+                        <p class="text-center">
+
+                            Cargo
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_tandem" type="radio" value="Tandem" name="ride[biketype]"></input>
+                    <label id="ride_tandem" for="ride_biketype_tandem">
+                        <div class="frame small tandem"></div>
+                        <p class="text-center">
+
+                            Tandem
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_bmx" type="radio" value="BMX" name="ride[biketype]"></input>
+                    <label id="ride_bmx" for="ride_biketype_bmx">
+                        <div class="bmx frame small"></div>
+                        <p class="text-center">
+
+                            BMX
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_one_of_a_kind" type="radio" value="One of A Kind" name="ride[biketype]"></input>
+                    <label id="ride_one_of_a_kind" for="ride_biketype_one_of_a_kind">
+                        <div class="frame one_of_a_kind small"></div>
+                        <p class="text-center">
+
+                            One of A Kind
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_hybrid" type="radio" value="Hybrid" name="ride[biketype]"></input>
+                    <label id="ride_hybrid" for="ride_biketype_hybrid">
+                        <div class="frame hybrid small"></div>
+                        <p class="text-center">
+
+                            Hybrid
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_electric" type="radio" value="Electric" name="ride[biketype]"></input>
+                    <label id="ride_electric" for="ride_biketype_electric">
+                        <div class="electric frame small"></div>
+                        <p class="text-center">
+
+                            Electric
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_tricycle" type="radio" value="Tricycle" name="ride[biketype]"></input>
+                    <label id="ride_tricycle" for="ride_biketype_tricycle">
+                        <div class="frame small tricycle"></div>
+                        <p class="text-center">
+
+                            Tricycle
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_triathlon" type="radio" value="Triathlon" name="ride[biketype]"></input>
+                    <label id="ride_triathlon" for="ride_biketype_triathlon">
+                        <div class="frame small triathlon"></div>
+                        <p class="text-center">
+
+                            Triathlon
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_recumbent" type="radio" value="Recumbent" name="ride[biketype]"></input>
+                    <label id="ride_recumbent" for="ride_biketype_recumbent">
+                        <div class="frame recumbent small"></div>
+                        <p class="text-center">
+
+                            Recumbent
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_wheels" type="radio" value="Wheels" name="ride[biketype]"></input>
+                    <label id="ride_wheels" for="ride_biketype_wheels">
+                        <div class="frame small wheels"></div>
+                        <p class="text-center">
+
+                            Wheels
+
+                        </p>
+                    </label>
+                </fieldset>
+        </div>
+
   <% end %>
 </div>

@@ -1,0 +1,449 @@
+<div class="main-column listing_form">
+            <fieldset>
+                <div class="controls radio-button-group main">
+                    <label>
+                        <h3>
+
+                            Ride Type
+
+                        </h3>
+                    </label>
+                    <input id="type_bike" type="radio" value="bike" name="type"></input>
+                    <label id="type_bike" for="type_bike">
+                        <div class="frame ride_type_bike"></div>
+                        <p class="text-center">
+
+                            Bike
+
+                        </p>
+                    </label>
+                    <input id="type_parent_surf" type="radio" value="surf" name="type_parent"></input>
+                    <label id="type_parent_surf" for="type_parent_surf">
+                        <div class="frame ride_type_surf"></div>
+                        <p class="text-center">
+
+                            Surf
+
+                        </p>
+                    </label>
+                    <input id="type_parent_snow" type="radio" value="snow" name="type_parent"></input>
+                    <label id="type_parent_snow" for="type_parent_snow">
+                        <div class="frame ride_type_snow"></div>
+                        <p class="text-center">
+
+                            Snow
+
+                        </p>
+                    </label>
+                </div>
+                <div class="radio-button-group surf-type-dropdown" style="display: none;">
+                    <label for="ride_type_surfboard">
+                        <h3>
+
+                            Surf Type
+
+                        </h3>
+                        <input id="type_surfboard" type="radio" value="surfboard" name="type"></input>
+                        <label id="type_surfboard" for="type_surfboard">
+                            <div class="frame ride_type_surfboard"></div>
+                            <p class="text-center">
+
+                                Surfboard
+
+                            </p>
+                        </label>
+                        <input id="type_stand_up_paddle_board" type="radio" value="stand_up_paddle_board" name="type"></input>
+                        <label id="type_stand_up_paddle_board" for="type_stand_up_paddle_board">
+                            <div class="frame ride_type_stand_up_paddle"></div>
+                            <p class="text-center">
+
+                                Stand Up Paddle
+
+                            </p>
+                        </label>
+                    </label>
+                </div>
+                <div class="radio-button-group snow-type-dropdown" style="display:none;">
+                    <label for="ride_type_skis">
+                        <h3>
+
+                            Snow Type
+
+                        </h3>
+                        <input id="type_skis" type="radio" value="skis" name="type"></input>
+                        <label id="type_skis" for="type_skis">
+                            <div class="frame ride_type_skis"></div>
+                            <p class="text-center">
+
+                                Skis
+
+                            </p>
+                        </label>
+                        <input id="type_snowboard" type="radio" value="snowboard" name="type"></input>
+                        <label id="type_snowboard" for="type_snowboard">
+                            <div class="frame ride_type_snowboard"></div>
+                            <p class="text-center">
+
+                                Snowboard
+
+                            </p>
+                        </label>
+                    </label>
+                </div>
+            </fieldset>
+            <div id="ride_extension_details">
+                <fieldset class="radio-button-group">
+                    <h3>
+
+                        Bike Type
+
+                    </h3>
+                    <input id="ride_biketype_road" type="radio" value="Road" name="ride[biketype]"></input>
+                    <label id="ride_road" for="ride_biketype_road">
+                        <div class="frame road small"></div>
+                        <p class="text-center">
+
+                            Road
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_mountain" type="radio" value="Mountain" name="ride[biketype]"></input>
+                    <label id="ride_mountain" for="ride_biketype_mountain">
+                        <div class="frame mountain small"></div>
+                        <p class="text-center">
+
+                            Mountain
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_cruiser" type="radio" value="Cruiser" name="ride[biketype]"></input>
+                    <label id="ride_cruiser" for="ride_biketype_cruiser">
+                        <div class="cruiser frame small"></div>
+                        <p class="text-center">
+
+                            Cruiser
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_folding" type="radio" value="Folding" name="ride[biketype]"></input>
+                    <label id="ride_folding" for="ride_biketype_folding">
+                        <div class="folding frame small"></div>
+                        <p class="text-center">
+
+                            Folding
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_fixed_gear" type="radio" value="Fixed Gear" name="ride[biketype]"></input>
+                    <label id="ride_fixed_gear" for="ride_biketype_fixed_gear">
+                        <div class="fixed_gear frame small"></div>
+                        <p class="text-center">
+
+                            Fixed Gear
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_single_speed" type="radio" value="Single Speed" name="ride[biketype]"></input>
+                    <label id="ride_single_speed" for="ride_biketype_single_speed">
+                        <div class="frame single_speed small"></div>
+                        <p class="text-center">
+
+                            Single Speed
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_professional_road" type="radio" value="Professional Road" name="ride[biketype]"></input>
+                    <label id="ride_professional_road" for="ride_biketype_professional_road">
+                        <div class="frame professional_road small"></div>
+                        <p class="text-center">
+
+                            Prof. Road
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_professional_mountain" type="radio" value="Professional Mountain" name="ride[biketype]"></input>
+                    <label id="ride_professional_mountain" for="ride_biketype_professional_mountain">
+                        <div class="frame professional_mountain small"></div>
+                        <p class="text-center">
+
+                            Prof. Mountain
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_children_s" type="radio" value="Children's" name="ride[biketype]"></input>
+                    <label id="ride_children_s" for="ride_biketype_children_s">
+                        <div class="children_s frame small"></div>
+                        <p class="text-center">
+
+                            Children's
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_cargo" type="radio" value="Cargo" name="ride[biketype]"></input>
+                    <label id="ride_cargo" for="ride_biketype_cargo">
+                        <div class="cargo frame small"></div>
+                        <p class="text-center">
+
+                            Cargo
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_tandem" type="radio" value="Tandem" name="ride[biketype]"></input>
+                    <label id="ride_tandem" for="ride_biketype_tandem">
+                        <div class="frame small tandem"></div>
+                        <p class="text-center">
+
+                            Tandem
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_bmx" type="radio" value="BMX" name="ride[biketype]"></input>
+                    <label id="ride_bmx" for="ride_biketype_bmx">
+                        <div class="bmx frame small"></div>
+                        <p class="text-center">
+
+                            BMX
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_one_of_a_kind" type="radio" value="One of A Kind" name="ride[biketype]"></input>
+                    <label id="ride_one_of_a_kind" for="ride_biketype_one_of_a_kind">
+                        <div class="frame one_of_a_kind small"></div>
+                        <p class="text-center">
+
+                            One of A Kind
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_hybrid" type="radio" value="Hybrid" name="ride[biketype]"></input>
+                    <label id="ride_hybrid" for="ride_biketype_hybrid">
+                        <div class="frame hybrid small"></div>
+                        <p class="text-center">
+
+                            Hybrid
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_electric" type="radio" value="Electric" name="ride[biketype]"></input>
+                    <label id="ride_electric" for="ride_biketype_electric">
+                        <div class="electric frame small"></div>
+                        <p class="text-center">
+
+                            Electric
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_tricycle" type="radio" value="Tricycle" name="ride[biketype]"></input>
+                    <label id="ride_tricycle" for="ride_biketype_tricycle">
+                        <div class="frame small tricycle"></div>
+                        <p class="text-center">
+
+                            Tricycle
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_triathlon" type="radio" value="Triathlon" name="ride[biketype]"></input>
+                    <label id="ride_triathlon" for="ride_biketype_triathlon">
+                        <div class="frame small triathlon"></div>
+                        <p class="text-center">
+
+                            Triathlon
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_recumbent" type="radio" value="Recumbent" name="ride[biketype]"></input>
+                    <label id="ride_recumbent" for="ride_biketype_recumbent">
+                        <div class="frame recumbent small"></div>
+                        <p class="text-center">
+
+                            Recumbent
+
+                        </p>
+                    </label>
+                    <input id="ride_biketype_wheels" type="radio" value="Wheels" name="ride[biketype]"></input>
+                    <label id="ride_wheels" for="ride_biketype_wheels">
+                        <div class="frame small wheels"></div>
+                        <p class="text-center">
+
+                            Wheels
+
+                        </p>
+                    </label>
+                    <fieldset>
+                        <label class="h3" for="ride_size">
+
+                            Rider Height
+
+                        </label>
+                        <select id="ride_size" class="chosen-select" style="width: 200px; display: none;" name="ride[size]">
+                            <option value=""></option>
+                            <option value="48">
+
+                                4' (121 cm) or less
+
+                            </option>
+                            <option value="51">
+
+                                4'3'' (129 cm)
+
+                            </option>
+                            <option value="54">
+
+                                4'6'' (137 cm)
+
+                            </option>
+                            <option value="57">
+
+                                4'9'' (144 cm)
+
+                            </option>
+                            <option value="60">
+
+                                5' (152 cm)
+
+                            </option>
+                            <option value="63">
+
+                                5'3'' (160 cm)
+
+                            </option>
+                            <option value="66">
+
+                                5'6'' (167 cm)
+
+                            </option>
+                            <option value="69">
+
+                                5'9'' (175 cm)
+
+                            </option>
+                            <option value="72">
+
+                                6' (182 cm)
+
+                            </option>
+                            <option value="75">
+
+                                6'3'' (190 cm)
+
+                            </option>
+                            <option value="78">
+
+                                6'6'' (198 cm)
+
+                            </option>
+                            <option value="81">
+
+                                6'9'' (205 cm)
+
+                            </option>
+                            <option value="84">
+
+                                7' (213 cm) or taller
+
+                            </option>
+                        </select>
+                        <div id="ride_size_chosen" class="chosen-container chosen-container-single" style="width: 55%;" title="">
+                            <a class="chosen-single chosen-default" tabindex="-1">
+                                <span>
+
+                                    Select an Option
+
+                                </span>
+                                <div>
+                                    <b></b>
+                                </div>
+                            </a>
+                            <div class="chosen-drop">
+                                <div class="chosen-search">
+                                    <input type="text" autocomplete="off"></input>
+                                </div>
+                                <ul class="chosen-results"></ul>
+                            </div>
+                        </div>
+                    </fieldset>
+                </fieldset>
+                <fieldset class="extras">
+                    <h3>
+
+                        Extras
+
+                    </h3>
+                    <div class="checkbox-button-group">
+                        <input id="ride_lock" type="checkbox" value="Lock" name="ride[extras][]"></input>
+                        <label id="lock" for="ride_lock">
+                            <div class="bike frame lock small"></div>
+                            <p class="text-center">
+
+                                Lock
+
+                            </p>
+                        </label>
+                        <input id="ride_helmet" type="checkbox" value="Helmet" name="ride[extras][]"></input>
+                        <label id="helmet" for="ride_helmet">
+                            <div class="bike frame helmet small"></div>
+                            <p class="text-center">
+
+                                Helmet
+
+                            </p>
+                        </label>
+                        <input id="ride_lights" type="checkbox" value="Lights" name="ride[extras][]"></input>
+                        <label id="lights" for="ride_lights">
+                            <div class="bike frame lights small"></div>
+                            <p class="text-center">
+
+                                Lights
+
+                            </p>
+                        </label>
+                        <input id="ride_bell" type="checkbox" value="Bell" name="ride[extras][]"></input>
+                        <label id="bell" for="ride_bell">
+                            <div class="bell bike frame small"></div>
+                            <p class="text-center">
+
+                                Bell
+
+                            </p>
+                        </label>
+                        <input id="ride_reflectors" type="checkbox" value="Reflectors" name="ride[extras][]"></input>
+                        <label id="reflectors" for="ride_reflectors">
+                            <div class="bike frame reflectors small"></div>
+                            <p class="text-center">
+
+                                Reflectors
+
+                            </p>
+                        </label>
+                        <input id="ride_basket" type="checkbox" value="Basket" name="ride[extras][]"></input>
+                        <label id="basket" for="ride_basket">
+                            <div class="basket bike frame small"></div>
+                            <p class="text-center">
+
+                                Basket
+
+                            </p>
+                        </label>
+                        <input id="ride_trailer" type="checkbox" value="Trailer" name="ride[extras][]"></input>
+                        <label id="trailer" for="ride_trailer">
+                            <div class="bike frame small trailer"></div>
+                            <p class="text-center">
+
+                                Trailer
+
+                            </p>
+                        </label>
+                        <input id="ride_surfboard_rack" type="checkbox" value="Surfboard Rack" name="ride[extras][]"></input>
+                        <label id="surfboard_rack" for="ride_surfboard_rack">
+                            <div class="bike frame small surfboard_rack"></div>
+                            <p class="text-center">
+
+                                Surfboard Rack
+
+                            </p>
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+            
+        </div>
